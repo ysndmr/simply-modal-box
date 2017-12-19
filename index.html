@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simply Modal Box</title>
+	<link rel="stylesheet" href="src/css/layout.min.css">
+	<link rel="stylesheet" href="src/css/ionicons.min.css">
+	<link rel="stylesheet" href="simply-modal.css">
+	<!-- inculde jquery -->
+	<script type="text/javascript" src="src/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="src/js/template.js"></script>
+	<!-- inculde simply modal box plugin -->
+	<script type="text/javascript" src="simply-modal.min.js"></script>
+</head>
+<body>
+<header class="site-header sticky navbar">
+<div>
+	<h1>
+		<strong>Simply Modal Box</strong> with awesome CSS3 effects
+	</h1>
+	<h2>Simply Modal built out of Javascript and CSS3</h2>
+</div>
+</header>
+<header class="site-header sticky navbar header-sticky">
+<div>
+	<h1>
+		<strong>Simply Modal Box</strong>
+	</h1>
+</div>
+</header>
+<main class="container">
+	<div class="row">
+	<aside class="col-sm-3 sidebar">
+          <ul class="nav sidenav dropable sticky" style="">
+            <li class=""><a href="#overview">Overview</a></li>
+            <li class=""><a href="#features">Features</a></li>
+            <li><a href="#getting-started">Getting started</a></li>
+            <li><a href="#effects">Effects</a></li>
+            <li><a href="#browser-support">Browser support</a></li>
+          </ul>
+        </aside>
+        <article class="col-sm-9 main-content" role="main">
+
+          <p class="lead">Simply Modal Box  is a modern dialog library which is highly configurable, clear, simple and easily styleable works on mobile devices, and can be customized to match your style.</p>
+
+          <section>
+            <h2 id="overview"><a href="#overview">Overview</a></h2>
+            <p>Check out the some following examples modal box opening:</p>
+            <div class="demo-overview">
+              <button type="button" class="btn btn-outline btn-lg btn-primary" data-props="default">default</button>
+              <button type="button" class="btn btn-outline btn-lg btn-primary" data-props="notifyTemplate">notifyTemplate</button>
+              <button type="button" class="btn btn-outline btn-lg btn-primary" data-props="iframeModal">
+				<div class="iframeModal" data-width="400" data-height="500" data-src="https://www.youtube.com/embed/cMNPPgB0_mU"></div>
+              iframeModal</button>
+              <button type="button" class="btn btn-outline btn-lg btn-primary" data-props="type1">type1</button>
+
+            </div>
+          </section>
+          <section>
+            <p>Check out the some following examples modal box type opening (I was set notification template (notifyTemplate))</p>
+            <div class="demo-overview">
+              <button type="button" class="btn btn-outline btn-lg btn-primary" data-props="default">default</button>
+              <button type="button" class="btn btn-outline btn-lg btn-primary" data-props="success">success</button>
+              <button type="button" class="btn btn-outline btn-lg btn-primary" data-props="info">info</button>
+              <button type="button" class="btn btn-outline btn-lg btn-primary" data-props="error">error</button>
+
+            </div>
+          </section>
+
+          <!-- Features -->
+          <section>
+            <h2 id="features"><a href="#features">Features</a></h2>
+            <p>Simply Modal Box  has many characteristics, take a look.</p>
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="promo small-icon left" style="height: 109px;">
+                  <i class="ion-grid"></i>
+                  <h3>Responsive</h3>
+                  <p>Works on any device: desktop, tablet or mobile.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="promo small-icon left" style="height: 109px;">
+                  <i class="ion-settings"></i>
+                  <h3>Customizable</h3>
+                  <p>Easily configurable animations.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="promo small-icon left" style="height: 109px;">
+                  <i class="ion-social-html5-outline"></i>
+                  <h3>Clean Code</h3>
+                  <p>Lightweight with no external dependencies.</p>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>Full-screen/viewport mode.</li>
+                  <li>Callback events for before and after open, complete and close.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- END Features -->
+
+          <!-- Getting started -->
+          <section>
+            <h2 id="getting-started"><a href="#getting-started">Getting started</a></h2>
+            <ul class="step-text">
+              <li>
+                <h5>Usage</h5>
+                <div class="table-responsive">
+                  <table class="table table-bordered table-striped table-info">
+                    <tbody>
+                      <tr>
+                        <td>Provider</td>
+                        <td>Procedure</td>
+                      </tr>
+
+                      <tr>
+                        <td>Basic download</td>
+                        <td><a id="download" href="https://github.com/dixso/Simply Modal Box /archive/4.0.3.zip">download.zip</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li>
+                <h5>Include the files:</h5>
+                <div class="code-snippet">
+                  <div class="code-preview">
+                    <div class="require-script">
+                      <p class="css"><code>&lt;link href="simply-modal.min.css" rel="stylesheet"&gt;</code></p>
+                      <p class="js"><code>&lt;script src="simply-modal.min.js"&gt;&lt;/script&gt;</code></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <h5>Call the plugin when the body is load:</h5>
+                <div class="prism-show-language"><div class="prism-show-language-label">JavaScript</div></div><pre class="line-numbers language-javascript"><span class="language-name"> javascript</span><a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!">Copy</a><code class=" language-javascript"><span class="token comment" spellcheck="true">// Instantiate new modal</span>
+
+<span class="token keyword">$.simplyModal</span>  <span class="token punctuation">(</span><span class="token punctuation">({</span>
+    title<span class="token punctuation">:</span> <span class="token string">'Modal Box Title'</span><span class="token punctuation">,</span>
+    description<span class="token punctuation">:</span> <span class="token string">'Modal Box description'</span>
+    setTimeout<span class="token punctuation">:</span> <span class="token string">0</span>
+    class<span class="token punctuation">:</span> <span class="token string">'set-your-class'</span>
+    type<span class="token punctuation">:</span> <span class="token string">'iframeModal'</span>
+    defaultW<span class="token punctuation">:</span> <span class="token string">'set-your-width'</span>
+    defaultH<span class="token punctuation">:</span> <span class="token string">'set-your-height'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+            </ul>
+          </section>
+          <!-- END Getting started -->
+
+          <!-- Effects -->
+          <section>
+            <h2 id="effects"><a href="#effects">Effects</a></h2>
+            <p>Simply Modal Box  has multiple transitions that can be applied to your modals to add smooth animations to your page.</p>
+            <div class="code-window"><div class="window-bar"><div class="circles"><span class="circle circle-red"></span> <span class="circle circle-yellow"></span> <span class="circle circle-green"></span></div></div>
+              <div class="window-content"><div class="code-preview">
+                <div class="table-responsive">
+                  <table class="table table-striped table-info">
+                    <tbody>
+                      <tr>
+                        <td>fadein</td>
+                        <td><button type="button" class="btn btn-outline btn-sm btn-primary" data-props="success" data-effect="fadein">demo</button></td>
+                      </tr>
+                      <tr>
+                        <td>slideRight</td>
+                        <td><button type="button" class="btn btn-outline btn-sm btn-primary" data-props="default" data-effect="slideRight">demo</button></td>
+                      </tr>
+                      <tr>
+                        <td>slideBottom</td>
+                        <td><button type="button" class="btn btn-outline btn-sm btn-primary" data-props="success" data-effect="slideBottom">demo</button></td>
+                      </tr>
+                      <tr>
+                        <td>fall</td>
+                        <td><button type="button" class="btn btn-outline btn-sm btn-primary" data-props="info" data-effect="fall">demo</button></td>
+                      </tr>
+                      <tr>
+                        <td>flid3d</td>
+                        <td><button type="button" class="btn btn-outline btn-sm btn-primary" data-props="error" data-effect="flid3d">demo</button></td>
+                      </tr>
+                      <tr>
+                        <td>scale</td>
+                        <td><button type="button" class="btn btn-outline btn-sm btn-primary" data-props="success" data-effect="scale">demo</button></td>
+                      </tr>
+                      <tr>
+                        <td>newspaper</td>
+                        <td><button type="button" class="btn btn-outline btn-sm btn-primary" data-props="error" data-effect="newspaper">demo</button></td>
+                      </tr>
+                      <tr>
+                        <td>d3rotate</td>
+                        <td><button type="button" class="btn btn-outline btn-sm btn-primary" data-props="info" data-effect="d3rotate">demo</button></td>
+
+
+                      </tr>
+                      <tr>
+                        <td>horizontal-3d</td>
+                        <td><button type="button" class="btn btn-outline btn-sm btn-primary" data-props="success" data-effect="horizontal-3d">demo</button></td>
+
+
+                      </tr>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div></div>
+            </div>
+          </section>
+          <!-- END Effects -->
+          <section>
+            <h2 id="overview"><a href="#overview">Options</a></h2>
+            <p>Check out the some following examples modal box opening:</p>
+
+            <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>type</th>
+                          <th>default</th>
+                          <th>description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>title</td>
+                          <td>string</td>
+                          <td>null</td>
+                          <td>Set the your modal box title (optional)</td>
+                        </tr>
+                        <tr>
+                          <td>description</td>
+                          <td>string</td>
+                          <td>null</td>
+                          <td>Set the your modal box description / spot (optional)</td>
+                        </tr>
+                        <tr>
+                          <td>setTimeout</td>
+                          <td>integer</td>
+                          <td>false</td>
+                          <td>Set the automatic close after millisecond </td>
+                        </tr>
+                        <tr>
+                          <td>classSet</td>
+                          <td>string</td>
+                          <td>Array</td>
+                          <td>Set the template type (notification template for example / iframeModal etc.) .</td>
+                        </tr>
+
+                        <tr>
+                          <td>close</td>
+                          <td>boolean</td>
+                          <td>true</td>
+                          <td>Allows the user to close the modal when press <kbd>esc</kbd>.</td>
+                        </tr>
+                        <tr>
+                          <td>buttonNameSet</td>
+                          <td>string</td>
+                          <td>Yes/No</td>
+                          <td>If you want to ask your user (Yes/No reply). You can set what do you want button name.</td>
+                        </tr>
+                        <tr>
+                          <td>effect</td>
+                          <td>string</td>
+                          <td>fadein</td>
+                          <td>Set the effect name.</td>
+                        </tr>
+                        <tr>
+                          <td>classBtn</td>
+                          <td>string</td>
+                          <td>simply-iframeModal</td>
+                          <td>If you want use iframe modal box, set your element class. You must to use div element. <code>'div class="simply-iframeModal" data-width="400" data-height="500" data-src="https://www.youtube.com/embed/cMNPPgB0_mU"</div></code>.</td>
+                        </tr>
+                        <tr>
+                          <td>defaultW</td>
+                          <td>integer</td>
+                          <td>400</td>
+                          <td>If you want the use Iframe modal box, you can set your iframe width. You can change.</td>
+                        </tr>
+                          <tr>
+                          <td>defaultH</td>
+                          <td>integer</td>
+                          <td>500</td>
+                          <td>If you want the use Iframe modal box, you can set your iframe height. You can change.</td>
+                        </tr>
+                        <tr>
+                          <td>cookie</td>
+                          <td>Array</td>
+                          <td>expire : null name : null</td>
+                          <td>If you want to set cookie (no show again for example), you can set cookie name and expire.</td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+          </section>
+
+
+          <section class="browser-support-content">
+            <h2 id="browser-support"><a href="#browser-support">Browser support</a></h2>
+            <p><img class="img-responsive center" src="demos/device_support.png"></p>
+          </section>
+          <!-- END Browser support -->
+
+        </article>
+</div>
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+
+</html>
