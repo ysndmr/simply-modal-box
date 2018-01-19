@@ -451,3 +451,13 @@ img.center{
 	    text-align: center;
     margin: 0 auto;
 }
+.sidebar ul li > ul li{
+	float: left;
+	list-style: none
+}
+.sidebar ul li > ul li a{
+	    display: block;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #000;
+}
