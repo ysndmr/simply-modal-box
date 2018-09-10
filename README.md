@@ -40,9 +40,6 @@ $.simplyModal  (({
 });
 ```
 
-# Plugin Site & Demo Page
-
-http://www.simplymodal.com/
 
 
 ## Css3 Effects
