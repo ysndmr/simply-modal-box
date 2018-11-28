@@ -40,6 +40,8 @@ $.simplyModal  (({
 });
 ```
 
+
+
 ## Css3 Effects
 fadein, slideRight, slideBottom, fall, flid3d, scale, newspaper, d3rotate, horizontal-3d
 
