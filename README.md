@@ -57,7 +57,7 @@ fadein, slideRight, slideBottom, fall, flid3d, scale, newspaper, d3rotate, horiz
 | buttonNameSet  | string   | Yes/No   | If you want to ask your user (Yes/No reply). You can set what do you want button name.
 | effect  | string   | fadein  | Set the effect name.
 | classBtn  | string   | fadein  | If you want use iframe modal box, set your element class. You must to use div element. 'div class="simply-iframeModal" data-width="400" data-height="500" data-src="https://www.youtube.com/embed/cMNPPgB0_mU".
-| typeSet  | string   | 500   | For which purpose you can choose it. 'default', 'type1', 'notifyTemplate', 'iframeModal'.
+| typeSet  | string   | default   | For which purpose you can choose it. 'default', 'type1', 'notifyTemplate', 'iframeModal'.
 | defaultW  | integer   | 400   | If you want the use Iframe modal box, you can set your iframe width. You can change.
 | defaultH  | integer   | 500   | If you want the use Iframe modal box, you can set your iframe height. You can change.
 | cookie  | array   | expire : null name : null   | If you want to set cookie (no show again for example), you can set cookie name and expire.
