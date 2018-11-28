@@ -10,8 +10,7 @@
     display: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    transition: all 0.3s;
-
+    transition: all 0.3s
 }
 
 .modal-box-group.type1 {
@@ -33,7 +32,6 @@
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    min-width: 370px
 }
 
 .modal-box-group.notify-group.success {
@@ -51,10 +49,6 @@
 .modal-box-group.notify-group.show {
     top: 5px!important;
     position: fixed
-}
-
-modal-box-group type1 .modal-box-group.notify-group {
-    height: 60px
 }
 
 .modal-box-group.notify-group .modal-body {
@@ -91,13 +85,11 @@ modal-box-group type1 .modal-box-group.notify-group {
 .modal-box-group.notify-group a.close {
     float: right;
     right: 0;
-    padding: 18px 18px;
+    padding: 14px 18px;
     top: 0;
     color: #fff
 }
-.modal-box-group.default .header{
-    display: none
-}
+
 .modal-box-group.notify-group.success a.close {
     background-color: #457515
 }
@@ -241,55 +233,9 @@ modal-box-group type1 .modal-box-group.notify-group {
     transform: scale(1);
     opacity: 1
 }
-.newspaper {
-    -webkit-transform: scale(0) rotate(720deg);
-    -moz-transform: scale(0) rotate(720deg);
-    -ms-transform: scale(0) rotate(720deg);
-    transform: scale(0) rotate(720deg);
-    opacity: 0;
-        -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.newspaper.show {
-    -webkit-transform: scale(1) rotate(0deg);
-    -moz-transform: scale(1) rotate(0deg);
-    -ms-transform: scale(1) rotate(0deg);
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-}
-.d3rotate {
-    -webkit-perspective: 1300px;
-    -moz-perspective: 1300px;
-    perspective: 1300px;
-        -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform: translateY(100%) rotateX(90deg);
-    -moz-transform: translateY(100%) rotateX(90deg);
-    -ms-transform: translateY(100%) rotateX(90deg);
-    transform: translateY(100%) rotateX(90deg);
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-
-.d3rotate.show{
-    -webkit-transform: translateY(0%) rotateX(0deg);
-    -moz-transform: translateY(0%) rotateX(0deg);
-    -ms-transform: translateY(0%) rotateX(0deg);
-    transform: translateY(0%) rotateX(0deg);
-    opacity: 1;
-}
 
 .show {
-    visibility: visible;
+    display: block
 }
 
 .modal-box-group .header,
@@ -320,8 +266,7 @@ modal-box-group type1 .modal-box-group.notify-group {
 
 .notify-group .modal-body p {
     width: calc(100% - 140px)!important;
-    text-align: left!important;
-    margin: 0;
+    text-align: left!important
 }
 
 .modal-box-group .modal-body {
@@ -355,8 +300,7 @@ modal-box-group type1 .modal-box-group.notify-group {
     text-align: center;
     padding: 20px 10px;
     font-size: 18px;
-    font-weight: 700;
-    border-radius: 0
+    font-weight: 700
 }
 
 .button-group-set a:last-child {
@@ -385,16 +329,18 @@ modal-box-group type1 .modal-box-group.notify-group {
     background-color: transparent
 }
 
-a.close {
+.modal-box-group a.close {
+    line-height: 1;
     font-size: 2em;
     position: absolute;
+    top: 8%;
     right: 5%;
     text-decoration: none;
     color: #fff!important;
     transition: all .2s ease-in-out
 }
 
-a.close:hover {
+.modal-box-group a.close:hover {
     transform: scale(1.2)
 }
 
@@ -410,10 +356,21 @@ a.close:hover {
 
 @media (max-width:500px) {
     .modal-box-group {
-        width: 60%!important
+        width: 100%!important;
+        border:0;
     }
     .modal-box-group.type1 {
-        width: 70%!important
+        width: 90%!important
+    }
+    .modal-box-group .modal-body p{
+            font-size: 16px;
+
+    }
+    .modal-box-group.notify-group.show{
+        top:0!important;
+    }
+    .modal-box-group.notify-group .modal-box-group .modal-body p{
+                    text-shadow: 1px 1px 8px #000;
     }
 }
 
@@ -429,13 +386,13 @@ a.close:hover {
     }
 }
 
-.modal-box-group.iframeModal a.close {
+.modal-box-group.ht-iframeModal a.close {
     right: -75px;
     top: 0;
     background-color: #000
 }
 
-.modal-box-group.iframeModal a.close img {
+.modal-box-group.ht-iframeModal a.close img {
     width: 30px;
     height: 30px
 }

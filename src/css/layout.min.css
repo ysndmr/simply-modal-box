@@ -457,7 +457,12 @@ img.center{
 }
 .sidebar ul li > ul li a{
 	    display: block;
-    padding: 10px 20px;
+    padding: 10px 13px;
     font-size: 30px;
     color: #000;
+}
+.sidebar ul li > ul li.tt{
+	display: block;
+	width: 100%;
+	font-size: 14px;
 }
